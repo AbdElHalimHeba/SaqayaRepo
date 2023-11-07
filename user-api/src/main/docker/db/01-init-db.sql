@@ -1,0 +1,9 @@
+-- CREATE TABLE
+DROP TABLE IF EXISTS usr;
+CREATE TABLE usr (
+	id VARCHAR PRIMARY KEY,
+	first_name VARCHAR NOT NULL,
+	last_name VARCHAR NOT NULL,
+    email VARCHAR NOT NULL UNIQUE,
+    marketing_consent BOOLEAN NOT NULL
+);
